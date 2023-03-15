@@ -1,0 +1,77 @@
+/*Icon for the logo */
+.icon {
+    height: 80px;
+    width: 80px;
+    display: block;
+    border-radius: 120px;
+    margin-right: 10px;
+}
+
+.cart{
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin-right: 50px;
+    color: white;
+}
+
+
+
+
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #CA680E;
+  }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF9536;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Logo */
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    float: left;
+    list-style: none;
+    padding: 30px;
+    
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    size: 10px;
+  }
+  
+  /* Search box */
+  .search-box {
+    display: flex;
+  }
+  
+  
+  
+  
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+  
