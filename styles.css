@@ -21,7 +21,7 @@
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-    background-color: #CA680E;
+    background-color: #854309;
   }
 
 /* Navbar */
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FF9536;
+    background-color: #fd9131;
     color: #fff;
     padding: 10px;
   }
@@ -58,10 +58,112 @@
     size: 10px;
   }
   
-  /* Search box */
-  .search-box {
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    overflow: hidden;
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .slide {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slide h2{
+    position: absolute;
+    color: white;
+    top: 135px;
+    text-align: center;
+    margin-left: -10%;
+
+  }
+  .slide h4{
+    position: absolute;
+    color: white;
+    top: 180px;
+    text-align: center;
+    margin-left: -10%;
+
+  }
+  .slide input{
+    position: absolute;
+    color: white;
+    top: 50%;
+    text-align: center;
+    margin-left: -10%;
+    background-color: #fd9131;
+    border-radius: 20px;
+    border-color: white;
+    padding: 10px;
+  }
+  
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
   }
+  
+  .navigation label {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  
+  
+  #slide1:checked ~ .slides {
+    transform: translateX(0);
+    
+  }
+  
+  #slide2:checked ~ .slides {
+    transform: translateX(-40%);
+    
+  }
+  
+  #slide3:checked ~ .slides {
+    transform: translateX(-70%);
+  }
+  
+  #slide1:checked ~ .navigation label:nth-child(1),
+  #slide2:checked ~ .navigation label:nth-child(2),
+  #slide3:checked ~ .navigation label:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+  }
+
+  
+  
+  
+  
+  
   
   
   

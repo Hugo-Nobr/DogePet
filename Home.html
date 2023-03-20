@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt/br">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" type="text/css">
   <title>DogePet</title>
   
 </head>
 <body>
-
   <nav class="navbar">
     <a href="#" class="logo"><img class="icon" src="doge.gif"></a>
     <ul class="nav-links">
@@ -24,9 +23,61 @@
         <td><a href="#"><img class="cart" src="profile.png"></a></td>
         <td><a href="#" class="acard"><img  class="cart" src="cart.png"/></a></td>
       </tr>
-     
     </table>
+
   </nav>
+
+  
+  
+  <div class="carousel">
+    <input type="radio" id="slide1" name="slides" checked>
+    <input type="radio" id="slide2" name="slides">
+    <input type="radio" id="slide3" name="slides">
+    <div class="slides">
+      <div class="slide">
+
+        <h2 style="margin-left: -8%;">Quem Somos?</h2>
+        <h4 style="margin-left: -8%;">a DogePet é um Petshop especializado em cuidar dos seus bichinhos!<br>Temos tudo que você precisa para cuidar desses animais.</h4>
+        <input style="margin-left: -8%;" type="button" value="Ver Mais" onclick="location.href='#'">
+        <img src="dog-583007.webp"  alt="slide1">
+      
+      </div>
+      <div class="slide">
+
+        
+        <h2 style="margin-left: 5%;">A melhor ração, para sua melhor companhia!</h2>
+        <h4 style="margin-left: 5%;">Rações a partir de R$150</h4>
+        <input  style="margin-left: 5%;" type="button" value="Ver Mais">
+          
+        <img src="new-dog-gallery-choosing-a-name-istockphoto-184129038.jpg" alt="slide2">
+      
+      </div>
+      <div class="slide">
+        <h2 style="margin-left: -100px;">Os melhores preços para os nossos melhores amigos!</h2>
+        <h4 style="margin-left: -100px;">Casinhas com até 50% de desconto para não deixar seu amigo na mão</h4>
+        <img src="tw-pet-care.jpg" alt="slide3">
+        <input  style="margin-left: -100px;" type="button" value="Ver Mais">
+      
+      </div>
+    </div>
+    <div class="navigation">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+
+
   
 </body>
 </html>
