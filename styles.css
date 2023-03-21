@@ -1,0 +1,243 @@
+/*Icon for the logo */
+.icon {
+    height: 80px;
+    width: 80px;
+    display: block;
+    border-radius: 120px;
+    margin-right: 10px;
+}
+
+.cart{
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin-right: 50px;
+    color: white;
+}
+
+
+
+
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #854309;
+  }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fd9131;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Logo */
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    float: left;
+    list-style: none;
+    padding: 30px;
+    
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    size: 10px;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    overflow: hidden;
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .slide {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slide h2{
+    position: absolute;
+    color: white;
+    top: 135px;
+    text-align: center;
+    margin-left: -10%;
+
+  }
+  .slide h4{
+    position: absolute;
+    color: white;
+    top: 180px;
+    text-align: center;
+    margin-left: -10%;
+
+  }
+  .slide input{
+    position: absolute;
+    color: white;
+    top: 50%;
+    text-align: center;
+    margin-left: -10%;
+    background-color: #fd9131;
+    border-radius: 20px;
+    border-color: white;
+    padding: 10px;
+  }
+  
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .navigation label {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  
+  
+  #slide1:checked ~ .slides {
+    transform: translateX(0);
+    
+  }
+  
+  #slide2:checked ~ .slides {
+    transform: translateX(-40%);
+    
+  }
+  
+  #slide3:checked ~ .slides {
+    transform: translateX(-70%);
+  }
+  
+  #slide1:checked ~ .navigation label:nth-child(1),
+  #slide2:checked ~ .navigation label:nth-child(2),
+  #slide3:checked ~ .navigation label:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+  }
+
+  
+  .card {
+    flex: 1 0 25%;
+    border: 1px solid #e48913;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: .75rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .card-header {
+    background-color: #e96a21;
+    padding: 10px;
+    color: white;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .card-footer input[type="button"] {
+    color: #cf8d40;
+    text-decoration: none;
+    background-color: #e96a21;
+    border-radius: 10px;
+    border-color: #f5f5f5;
+    color: #fff;
+  }
+  
+  .card-footer a:hover {
+    text-decoration: underline;
+  }
+  .card-body img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+  
