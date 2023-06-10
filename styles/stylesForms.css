@@ -1,0 +1,34 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('images/new-dog-gallery-choosing-a-name-istockphoto-184129038.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.container {
+	margin: auto;
+	padding: 10px;
+	max-width: 50%;
+	margin-top: 15%;
+	background-color: #fd9131;
+  	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+input[type=text], input[type=password]{
+	width: 90%;
+	padding: 10px;
+	margin: 10px;
+	border: 5%;
+	background-color: #f1f1f1;
+}
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	margin: 10px;
+	border-radius: 5px;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
+}
