@@ -1,0 +1,8 @@
+name: teste
+on: push
+jobs:
+  testejob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Apresentação Github action!"
